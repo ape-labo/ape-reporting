@@ -12,7 +12,7 @@ module.exports = {
     data: {
         pkg: pkg,
         links: {
-            'nodeunit': 'https://www.npmjs.com/package/nodeunit'
+            'codeclimate': 'https://codeclimate.com/dashboard'
         }
     }
 };
