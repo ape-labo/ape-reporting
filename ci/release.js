@@ -1,21 +1,21 @@
 #!/usr/bin/env node
 
 /**
- * Run test
+ * Release this package.
  */
 
 "use strict";
 
 var path = require('path'),
     apeTasking = require('ape-tasking'),
-    apeTesting = require('ape-testing');
+    apeReleasing = require('ape-releasing');
 
 var basedir = path.resolve(__dirname, '..');
-
 process.chdir(basedir);
 
-apeTasking.runTasks('test', [
+
+apeTasking.runTasks('release', [
     function (callback) {
-        apeTesting.runNodeunit('test/*_test.js', callback);
+        apeReleasing.releasePackage({}, callback);
     }
 ], true);

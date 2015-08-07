@@ -48,7 +48,7 @@ This software is released under the [MIT License][my_license_url].
 Links
 ------
 
-+ [nodeunit](https://www.npmjs.com/package/nodeunit)
++ [codeclimate](https://codeclimate.com/dashboard)
 
 
 [npm_url]: https://www.npmjs.org/
