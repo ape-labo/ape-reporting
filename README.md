@@ -4,39 +4,35 @@ ape-reporting
 [![Build Status][my_travis_badge_url]][my_travis_url]
 [![Code Climate][my_codeclimate_badge_url]][my_codeclimate_url]
 [![Code Coverage][my_codeclimate_coverage_badge_url]][my_codeclimate_url]
-[![npm version][my_npm_budge_url]][my_npm_url]
+[![Dependency Status][my_gemnasium_badge_url]][my_gemnasium_url]
+[![npm Version][my_npm_budge_url]][my_npm_url]
 
-Reporting module for ape framework.
+
+ape framework module for reporting.
+
+Installation
+----
+
+```bash
+$ npm install ape-reporting --save-dev
+```
 
 
 Usage
 ----
 
-### Send report to codecliemate.
+### Send Report to codeclimate.
 
 ```javascript
 #!/usr/bin/env node
 
-/**
- * This is an example to send report to codeclimate.
- */
-
-"use strict";
-
 var apeReporting = require('ape-reporting');
 
+// Send report to codeclimate
 apeReporting.sendToCodeclimate('coverage/lcov.info', function(){
     /*...*/
 });
 
-```
-
-
-Installation
-----
-
-```javascript
-$ npm install ape-reporting --save
 ```
 
 
@@ -48,6 +44,7 @@ This software is released under the [MIT License][my_license_url].
 Links
 ------
 
++ [ape-repo](https://github.com/ape-repo)
 + [codeclimate](https://codeclimate.com/dashboard)
 
 
@@ -59,7 +56,8 @@ Links
 [my_codeclimate_url]: http://codeclimate.com/github/ape-repo/ape-reporting
 [my_codeclimate_badge_url]: http://img.shields.io/codeclimate/github/ape-repo/ape-reporting.svg?style=flat
 [my_codeclimate_coverage_badge_url]: http://img.shields.io/codeclimate/coverage/github/ape-repo/ape-reporting.svg?style=flat
-[my_coverage_url]: http://ape-repo.github.io/ape-reporting/coverage/lcov-report
+[my_gemnasium_url]: https://gemnasium.com/ape-repo/ape-reporting
+[my_gemnasium_badge_url]: https://gemnasium.com/ape-repo/ape-reporting.svg
 [my_npm_url]: http://www.npmjs.org/package/ape-reporting
 [my_npm_budge_url]: http://img.shields.io/npm/v/ape-reporting.svg?style=flat
 
