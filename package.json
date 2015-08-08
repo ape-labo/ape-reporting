@@ -1,6 +1,6 @@
 {
   "name": "ape-reporting",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "ape framework module for reporting.",
   "main": "lib",
   "scripts": {

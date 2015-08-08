@@ -10,15 +10,15 @@ ape-reporting
 [![Dependency Status][bd_gemnasium_shield_url]][bd_gemnasium_url]
 [![npm Version][bd_npm_shield_url]][bd_npm_url]
 
-[bd_repo_url]: https://github.com/ape-repoape-reporting
-[bd_travis_url]: http://travis-ci.org/ape-repoape-reporting
-[bd_travis_shield_url]: http://img.shields.io/travis/ape-repoape-reporting.svg?style=flat
-[bd_license_url]: https://github.com/ape-repoape-reporting/blob/master/LICENSE
-[bd_codeclimate_url]: http://codeclimate.com/github/ape-repoape-reporting
-[bd_codeclimate_shield_url]: http://img.shields.io/codeclimate/github/ape-repoape-reporting.svg?style=flat
-[bd_codeclimate_coverage_shield_url]: http://img.shields.io/codeclimate/coverage/github/ape-repoape-reporting.svg?style=flat
-[bd_gemnasium_url]: https://gemnasium.com/ape-repoape-reporting
-[bd_gemnasium_shield_url]: https://gemnasium.com/ape-repoape-reporting.svg
+[bd_repo_url]: https://github.com/ape-repo/ape-reporting
+[bd_travis_url]: http://travis-ci.org/ape-repo/ape-reporting
+[bd_travis_shield_url]: http://img.shields.io/travis/ape-repo/ape-reporting.svg?style=flat
+[bd_license_url]: https://github.com/ape-repo/ape-reporting/blob/master/LICENSE
+[bd_codeclimate_url]: http://codeclimate.com/github/ape-repo/ape-reporting
+[bd_codeclimate_shield_url]: http://img.shields.io/codeclimate/github/ape-repo/ape-reporting.svg?style=flat
+[bd_codeclimate_coverage_shield_url]: http://img.shields.io/codeclimate/coverage/github/ape-repo/ape-reporting.svg?style=flat
+[bd_gemnasium_url]: https://gemnasium.com/ape-repo/ape-reporting
+[bd_gemnasium_shield_url]: https://gemnasium.com/ape-repo/ape-reporting.svg
 [bd_npm_url]: http://www.npmjs.org/package/ape-reporting
 [bd_npm_shield_url]: http://img.shields.io/npm/v/ape-reporting.svg?style=flat
 
@@ -62,7 +62,7 @@ apeReporting.sendToCodeclimate('coverage/lcov.info', function(){
 
 License
 -------
-This software is released under the [MIT License](https://github.com/ape-repoape-reporting/blob/master/LICENSE).
+This software is released under the [MIT License](https://github.com/ape-repo/ape-reporting/blob/master/LICENSE).
 
 <!-- LICENSE End -->
 
