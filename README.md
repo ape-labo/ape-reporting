@@ -21,6 +21,7 @@ ape-reporting
 [bd_gemnasium_shield_url]: https://gemnasium.com/ape-repo/ape-reporting.svg
 [bd_npm_url]: http://www.npmjs.org/package/ape-reporting
 [bd_npm_shield_url]: http://img.shields.io/npm/v/ape-reporting.svg?style=flat
+[bd_bower_badge_url]: https://img.shields.io/bower/v/ape-reporting.svg?style=flat
 
 <!-- Badge End -->
 
@@ -34,9 +35,13 @@ ape framework module for reporting.
 
 
 
+
 <!-- Sections Start -->
 <a name="sections"></a>
 
+<!-- Section from "docs/readme/02.Usage.md.hbs" Start -->
+
+<a name="section-docs-readme-02-usage-md"></a>
 Usage
 ----
 
@@ -53,6 +58,8 @@ apeReporting.sendToCodeclimate('coverage/lcov.info', function(){
 });
 
 ```
+<!-- Section from "docs/readme/02.Usage.md.hbs" End -->
+
 
 <!-- Sections Start -->
 
