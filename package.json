@@ -1,6 +1,6 @@
 {
   "name": "ape-reporting",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "ape framework module for reporting.",
   "main": "lib",
   "scripts": {
@@ -42,5 +42,8 @@
     "coz": "^3.0.14",
     "coz-tmpl": "^1.0.4",
     "injectmock": "^1.1.3"
+  },
+  "engines": {
+    "node": ">=4.0.0"
   }
 }
