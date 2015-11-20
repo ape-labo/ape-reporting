@@ -8,7 +8,7 @@ install:
 before_script:
 - npm link .
 script:
-- .ci/build.js
-- .ci/test.js
-- .ci/cover.js
-- .ci/report.js
+- ./ci/build.js
+- ./ci/test.js
+- ./ci/cover.js
+- ./ci/report.js
