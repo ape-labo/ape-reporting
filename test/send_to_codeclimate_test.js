@@ -1,34 +1,46 @@
 /**
  * Test case for sendToCodeclimate.
- * Runs with nodeunit.
+ * Runs with mocha.
  */
+"use strict";
 
-var sendToCodeclimate = require('../lib/send_to_codeclimate.js'),
+const sendToCodeclimate = require('../lib/send_to_codeclimate.js'),
     childProcess = require('child_process'),
-    injectmock = require('injectmock');
+    injectmock = require('injectmock'),
+    assert = require('assert');
 
-exports.tearDown = function (done) {
-    injectmock.restoreAll();
-    done();
-};
+describe('send-to-codeclimate', () => {
 
-exports['Send with invalid lcov.'] = function (test) {
-    sendToCodeclimate('foo/bar/__not_existing__', function (err) {
-        test.ok(!!err);
-        test.done();
+    before((done) => {
+        process.env.CODECLIMATE_REPO_TOKEN = 'FOO';
+        done();
     });
-};
 
-exports['Do send.'] = function (test) {
-    injectmock(childProcess, 'spawn', function () {
-        return {
-            on: function (ev, callback) {
-                callback(0);
+    after((done) => {
+        injectmock.restoreAll();
+        done();
+    });
+
+
+    it('Send to codeclimate with invalid lcov', (done) => {
+        sendToCodeclimate('foo/bar/__not_existing__', function (err) {
+            assert.ok(!!err);
+            done();
+        });
+    });
+
+    it('Do send', (done)=> {
+        injectmock(childProcess, 'spawn', function () {
+            return {
+                on: function (ev, callback) {
+                    callback(0);
+                }
             }
-        }
+        });
+        sendToCodeclimate(__dirname + '/../docs/mockups/mock-lcov.info', function (err) {
+            assert.ifError(err);
+            done();
+        });
     });
-    sendToCodeclimate(__dirname + '/../docs/mockups/mock-lcov.info', function (err) {
-        test.ifError(err);
-        test.done();
-    });
-};
+});
+
