@@ -12,5 +12,5 @@ const apeTasking = require('ape-tasking')
 const apeReporting = require('../lib')
 
 apeTasking.runTasks('report', [
-  () => apeReporting.sendToCodeclimate('coverage/lcov.info', callback)
+  () => apeReporting.sendToCodeclimate('coverage/lcov.info')
 ], true)
