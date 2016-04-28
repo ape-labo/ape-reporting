@@ -4,15 +4,13 @@
  * Send reports.
  */
 
-"use strict";
+'use strict'
 
-process.chdir(__dirname + '/..');
+process.chdir(`${__dirname}/..`)
 
-var apeTasking = require('ape-tasking'),
-    apeReporting = require('../lib');
+const apeTasking = require('ape-tasking')
+const apeReporting = require('../lib')
 
 apeTasking.runTasks('report', [
-    (callback) => {
-        apeReporting.sendToCodeclimate('coverage/lcov.info', callback);
-    }
-], true);
+  () => apeReporting.sendToCodeclimate('coverage/lcov.info', callback)
+], true)
